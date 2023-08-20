@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    width: 100%;
+    background: #B6E1F7;
+    font-family: 'Krub', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+}
+.logo--alura{
+    width: 120px;
+    height: 48px;
+    padding: 20px;
+}
+.titulo--principal{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+h1{
+    font-family: 'Krub', sans-serif;
+    font-size: 52px;
+    color: #668BB0;
+}
+
+.caja--encriptador{
+    width: 100%;
+    display: flex;
+}
+
+.cajaTexto--encriptado{
+    
+}
