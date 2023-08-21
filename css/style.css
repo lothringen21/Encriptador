@@ -44,7 +44,6 @@ header{
     from {
     -webkit-filter: hue-rotate(0deg);
     }
-      
     to {
     -webkit-filter: hue-rotate(-360deg);
     }
@@ -140,3 +139,13 @@ h2{
   color: #fff !important;
 }
 
+.contenedor--footer{
+    display: flex;
+    width: 90%;
+    padding: 32px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #6C7CA4;
+}
