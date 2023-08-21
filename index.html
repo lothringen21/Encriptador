@@ -15,27 +15,30 @@
             <h1>Encriptador de texto</h1>
         </div>
     </header>
+    <main>
     <section class="caja--encriptador">
         <div class="cajaTexto--encriptador">
             <textarea name="cajaTexto" id="cajaTexto" cols="30" rows="10" placeholder="Ingresa tu texto aquí"></textarea>
         </div>
         <section class="resultado">
-            <div>
+            <div class="resultado--descripcion">
                 <h2>Ningún texto fue <br> encontrado</h2>
-                <p> Ingrese el texto que desees encriptar o <br> desencriptar</p>
+                <p class="resultado--parrafo"> Ingrese el texto que desees <br> encriptar o desencriptar</p>
             </div>
         </section>
     </section>
-    <section>
-        <div class="alerta">
-            <img src="./img/circle-exclamation-solid.svg" alt="alerta"><p>Solo letras minúsculas y sin acentos</p>
+    <section class="alerta">
+        <div class="alerta-- container" style="display: flex; gap: 10px;" >
+            <img class="alerta--img" src="./img/alerta.svg" alt="alerta">
+            <p class="alerta--descripcion">Solo letras minúsculas y sin acentos</p>
         </div>
     </section>
     <section class="botones">
-        <div class="botones--encriptadores">
-            <button class="btnEncriptar">Encriptar</button>
-            <button class="btnDesencriptar">Desencriptar</button>
+        <div class="botones--container">
+            <button class="btn">Encriptar</button>
+            <button class="btn">Desencriptar</button>
         </div>
     </section>
+</main>
 </body>
 </html>
