@@ -7,7 +7,7 @@ html, body{
 }
 
 body{
-    width: 100%;
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -103,7 +103,7 @@ h2{
 
 .resultado--parrafo{
     text-align: center;
-    color: #dadee9;
+    color: #6C7CA4;
     /*no olvidar cambiar el color (AÑADIR AQUI COLOR DE FUENTE)*/
 }
 
