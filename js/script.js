@@ -26,7 +26,7 @@ function encriptarMensaje(texto) {
 document.getElementById("encriptar").addEventListener("click", function () {
     const textoOriginal = document.getElementById("cajaTexto").value;
     const mensajeEncriptado = encriptarMensaje(textoOriginal);
-
+    document.getElementById("").textContent = "";
     document.getElementById("mensajeEncriptado").textContent = mensajeEncriptado;
     
 });
