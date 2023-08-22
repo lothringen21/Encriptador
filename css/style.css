@@ -108,6 +108,11 @@ h2{
     /*no olvidar cambiar el color (AÑADIR AQUI COLOR DE FUENTE)*/
 }
 
+.mensaje-encriptado{
+    color: #AB6E93;
+    font-size: 24px;
+}
+
 .alerta{
     margin-left: 100px;
 }
