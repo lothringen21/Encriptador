@@ -80,6 +80,7 @@ h1{
     font-size: 24px;
     border: none;
     background: none; /*no olvidar cambiar el color*/
+    color: #AB6E93;
 }
 
 #cajaTexto::placeholder{
