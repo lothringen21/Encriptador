@@ -16,18 +16,18 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 95%;
     display: flex;
 }
 
 .logo--alura{
-    width: 120px;
-    height: 48px;
+    width: 110px;
+    height: 80px;
     padding: 20px;
 }
 
 .titulo--principal{
-    width: 100%;
+    width: 95%;
     text-align: center;
     padding: 30px;
 }
@@ -63,29 +63,28 @@ h1{
 }
 
 .caja--encriptador{
-    width: 100%;
-    height: 390px;
-    display: flex;
-    justify-content: center ;
+    width: 95%;
+    height: 100%;
+
 }
 
 .cajaTexto--encriptador{
     margin-left: 60px;
-    background: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #cajaTexto{
-    width: 430px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     font-family: 'Krub',sans-serif;
     font-size: 24px;
     border: none;
     background: none; /*no olvidar cambiar el color*/
-    color: #AB6E93;
+    color: #FFFFFF;
 }
 
 #cajaTexto::placeholder{
-    color: #AB6E93;
+    color: #FFFFFF;
     font-weight: 400;
 }
 
@@ -94,9 +93,6 @@ h1{
     font-size: 24px;
 }
 
-/*.alerta{
-    margin-left: 100px;
-} pendiente por si hay que alargar el .mensaje-encriptado*/ 
 
 .alerta-- container{
     display: flex;
@@ -117,6 +113,7 @@ h1{
 .botones--container{
     display: flex;
     gap: 100px;
+    justify-content: center;
 }
 
 .btn{
@@ -136,10 +133,13 @@ h1{
   color: #fff !important;
 }
 
+.footer{
+    align-items: center;
+}
 .contenedor--footer{
     display: flex;
-    width: 90%;
-    padding: 32px;
+    width: 95%;
+    padding: 15px;
     font-weight: 600;
     justify-content: center;
     align-items: center;
