@@ -1,34 +1,28 @@
 
-const sustituciones = [
-    ["a", "ai"],
-    ["e", "enter"],
-    ["i", "imes"],
-    ["o", "ober"],
-    ["u", "ufat"]
-];
 
-// Función para encriptar un mensaje
-function encriptarMensaje(texto) {
-    let mensajeEncriptado = texto;
+document.addEventListener("DOMContentLoaded", function() {
+    const textMensaje = document.getElementById("cajaTexto");
+    const btnEncriptar = document.getElementById("encriptar");
+    const btnLimpiar = document.getElementById("limpiar");
+            
+    let encriptado = false;
 
-    for (const sustitucion of sustituciones) {
-        const letraOriginal = sustitucion[0];
-        const letraEncriptada = sustitucion[1];
+    btnEncriptar.addEventListener("click", () => {
+    let mensaje = textMensaje.value;
 
-        const regex = new RegExp(letraOriginal, 'g');
-        mensajeEncriptado = mensajeEncriptado.replace(regex, letraEncriptada);
+    if (encriptado) {
+        textMensaje.value = atob(mensaje);
+        btnEncriptar.textContent = "Encriptar";
+    } else {
+        textMensaje.value = btoa(mensaje);
+        btnEncriptar.textContent = "Desencriptar";
     }
 
-    return mensajeEncriptado;
-}
-
-// Evento click para encriptar
-document.getElementById("encriptar").addEventListener("click", function () {
-    const textoOriginal = document.getElementById("cajaTexto").value;
-    const mensajeEncriptado = encriptarMensaje(textoOriginal);
-    document.getElementById("").textContent = "";
-    document.getElementById("mensajeEncriptado").textContent = mensajeEncriptado;
-    
+    encriptado = !encriptado;
 });
 
-
+    btnLimpiar.addEventListener("click", () => {
+    textMensaje.value = "";
+    });
+});
+   
